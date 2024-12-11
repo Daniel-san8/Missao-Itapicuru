@@ -8,6 +8,7 @@
   --foreground: #171717;
   --brand-brown: #602312;
   --poppins: 'Poppins', sans-serif;
+  --primary-white: #fbf5f1;
 }
 
 @media (prefers-color-scheme: dark) {
