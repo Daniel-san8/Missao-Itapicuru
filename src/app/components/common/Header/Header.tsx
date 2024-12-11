@@ -4,7 +4,11 @@ export default function Header() {
       <div>
         Missão <span className='font-bold'>Itapicuru</span>
       </div>
-      <span>icon</span>
+      <div className='flex flex-col gap-y-2'>
+        <span className='menu-hamburguer'></span>
+        <span className='menu-hamburguer'></span>
+        <span className='menu-hamburguer-last'></span>
+      </div>
     </header>
   );
 }

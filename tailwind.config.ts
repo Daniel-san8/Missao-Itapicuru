@@ -12,6 +12,7 @@ export default {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         ['brand-brown']: 'var(--brand-brown)',
+        ['brand-beige']: 'var(--brand-beige)',
         ['primary-white']: 'var(--primary-white)',
       },
       fontFamily: {
