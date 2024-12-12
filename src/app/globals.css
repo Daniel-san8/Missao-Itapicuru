@@ -37,3 +37,11 @@ body {
 .transition-header {
   transition: 0.3s ease-in-out;
 }
+
+.headerNoActivate {
+  @apply flex font-poppins justify-between bg-brand-brown text-primary-white h-[72px] items-center px-6 text-[20px] transition-header;
+}
+
+.headerActivate {
+  @apply flex font-poppins justify-between bg-brand-light text-primary-white h-[72px] items-center px-6 text-[20px] transition-header;
+}
