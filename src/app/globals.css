@@ -26,14 +26,6 @@ body {
   height: 1500px;
 }
 
-.menu-hamburguer {
-  @apply bg-brand-beige w-[20px] h-[2px] rounded-sm;
-}
-
-.menu-hamburguer-last {
-  @apply bg-brand-beige w-[12px] h-[2px] rounded-sm self-end;
-}
-
 .transition-header {
   transition: 0.3s ease-in-out;
 }

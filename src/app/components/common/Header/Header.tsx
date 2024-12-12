@@ -5,6 +5,8 @@ import MenuHamburguer from './MenuHamburguer';
 
 export default function Header() {
   const headerRef = useRef<HTMLElement | null>(null);
+  const [isActivateHeader, setIsActivateHeader] =
+    React.useState<boolean>(false);
 
   React.useEffect(() => {
     addEventListener('scroll', changeHeader);
@@ -14,10 +16,12 @@ export default function Header() {
       if (headerRef.current && scrollY > 1) {
         headerRef.current.classList.remove('headerNoActivate');
         headerRef.current.classList.add('headerActivate');
+        setIsActivateHeader(true);
       }
       if (headerRef.current && scrollY === 0) {
         headerRef.current.classList.remove('headerActivate');
         headerRef.current.classList.add('headerNoActivate');
+        setIsActivateHeader(false);
       }
     }
 
@@ -31,7 +35,7 @@ export default function Header() {
       <div>
         Missão <span className='font-bold'>Itapicuru</span>
       </div>
-      <MenuHamburguer />
+      <MenuHamburguer activate={isActivateHeader} />
     </header>
   );
 }
