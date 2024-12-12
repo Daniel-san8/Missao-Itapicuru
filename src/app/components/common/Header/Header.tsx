@@ -13,12 +13,12 @@ export default function Header() {
 
     function changeHeader() {
       const scrollY = window.scrollY;
-      if (headerRef.current && scrollY > 1) {
+      if (!headerRef.current) return null;
+      if (scrollY > 1) {
         headerRef.current.classList.remove('headerNoActivate');
         headerRef.current.classList.add('headerActivate');
         setIsActivateHeader(true);
-      }
-      if (headerRef.current && scrollY === 0) {
+      } else {
         headerRef.current.classList.remove('headerActivate');
         headerRef.current.classList.add('headerNoActivate');
         setIsActivateHeader(false);
@@ -31,7 +31,7 @@ export default function Header() {
   }, [headerRef]);
 
   return (
-    <header ref={headerRef} className='headerActivate'>
+    <header ref={headerRef} className='headerNoActivate'>
       <div>
         Missão <span className='font-bold'>Itapicuru</span>
       </div>
