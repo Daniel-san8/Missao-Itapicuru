@@ -1,16 +1,17 @@
 'use client';
 
 import React, { useRef } from 'react';
-import MenuHamburguer from './MenuHamburguer';
+import Hamburguer from './Hamburguer';
+import MenuHamburguer from '../Menu-Hamburguer/MenuHamburguer';
 
 export default function Header() {
   const headerRef = useRef<HTMLElement | null>(null);
   const [isActivateHeader, setIsActivateHeader] =
     React.useState<boolean>(false);
+  const [menuIsOpen, setMenuIsOpen] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     addEventListener('scroll', changeHeader);
-
     function changeHeader() {
       const scrollY = window.scrollY;
       if (!headerRef.current) return null;
@@ -31,11 +32,18 @@ export default function Header() {
   }, [headerRef]);
 
   return (
-    <header ref={headerRef} className='headerNoActivate'>
-      <div>
-        Missão <span className='font-bold'>Itapicuru</span>
-      </div>
-      <MenuHamburguer activate={isActivateHeader} />
-    </header>
+    <>
+      <header ref={headerRef} className='headerNoActivate'>
+        <div>
+          Missão <span className='font-bold'>Itapicuru</span>
+        </div>
+        <Hamburguer
+          activate={isActivateHeader}
+          menuOpen={menuIsOpen}
+          setMenuOpen={setMenuIsOpen}
+        />
+      </header>
+      <MenuHamburguer menuOpen={menuIsOpen} />
+    </>
   );
 }
