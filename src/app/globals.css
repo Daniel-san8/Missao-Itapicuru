@@ -8,6 +8,7 @@
   --foreground: #171717;
   --brand-brown: #602312;
   --brand-beige: #fffaf1;
+  --brand-light: #c75205;
   --poppins: 'Poppins', sans-serif;
   --primary-white: #fbf5f1;
 }
@@ -22,6 +23,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  height: 1500px;
 }
 
 .menu-hamburguer {
@@ -30,4 +32,8 @@ body {
 
 .menu-hamburguer-last {
   @apply bg-brand-beige w-[12px] h-[2px] rounded-sm self-end;
+}
+
+.transition-header {
+  transition: 0.3s ease-in-out;
 }
