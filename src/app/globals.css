@@ -31,9 +31,9 @@ body {
 }
 
 .headerNoActivate {
-  @apply flex font-poppins justify-between bg-brand-brown text-primary-white h-[72px] items-center px-6 text-[20px] transition-header;
+  @apply flex font-poppins justify-between bg-brand-brown text-primary-white w-full h-[72px] items-center px-6 text-[20px] transition-header fixed;
 }
 
 .headerActivate {
-  @apply flex font-poppins justify-between bg-brand-light text-primary-white h-[72px] items-center px-6 text-[20px] transition-header;
+  @apply flex font-poppins justify-between bg-brand-light text-primary-white w-full h-[72px] items-center px-6 text-[20px] transition-header fixed;
 }
