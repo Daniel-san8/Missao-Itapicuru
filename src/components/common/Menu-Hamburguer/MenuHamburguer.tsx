@@ -1,6 +1,6 @@
-import FacebookIcon from '../../../../public/svg/facebookIcon';
-import InstagramIcon from '../../../../public/svg/instagramIcon';
-import YoutubeIcon from '../../../../public/svg/youtubeIcon';
+import FacebookIcon from '../../../../public/svg/FacebookIcon';
+import InstagramIcon from '../../../../public/svg/InstagramIcon';
+import YoutubeIcon from '../../../../public/svg/YoutubeIcon';
 
 export default function MenuHamburguer({ menuOpen }: { menuOpen: boolean }) {
   if (!menuOpen) return null;
