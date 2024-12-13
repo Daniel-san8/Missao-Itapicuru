@@ -13,9 +13,9 @@ export default function MenuHamburguer({
   setMenuIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const headerNoActivate =
-    'pt-[72px] bg-brand-brown flex flex-col items-center font-dm-sans transition-header';
+    'pt-[72px] bg-brand-brown flex flex-col items-center font-dm-sans transition-header animateMenu';
   const headerActivate =
-    'pt-[72px] bg-brand-light flex flex-col items-center font-dm-sans transition-header';
+    'pt-[72px] bg-brand-light flex flex-col items-center font-dm-sans transition-header animateMenu';
 
   if (!menuOpen) return null;
   return (

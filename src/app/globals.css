@@ -34,9 +34,24 @@ body {
 }
 
 .headerNoActivate {
-  @apply flex font-poppins justify-between bg-brand-brown text-primary-white w-full h-[72px] items-center px-6 text-[20px] transition-header fixed;
+  @apply flex font-poppins justify-between bg-brand-brown text-primary-white w-full h-[72px] items-center px-6 text-[20px] transition-header fixed z-10;
 }
 
 .headerActivate {
-  @apply flex font-poppins justify-between bg-brand-light text-primary-white w-full h-[72px] items-center px-6 text-[20px] transition-header fixed;
+  @apply flex font-poppins justify-between bg-brand-light text-primary-white w-full h-[72px] items-center px-6 text-[20px] transition-header fixed z-10;
+}
+
+.animateMenu {
+  animation: animateMenu 0.5s ease-in-out;
+}
+
+@keyframes animateMenu {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
