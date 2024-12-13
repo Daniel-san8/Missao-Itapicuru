@@ -2,10 +2,20 @@ import FacebookIcon from '../../../../public/svg/FacebookIcon';
 import InstagramIcon from '../../../../public/svg/InstagramIcon';
 import YoutubeIcon from '../../../../public/svg/YoutubeIcon';
 
-export default function MenuHamburguer({ menuOpen }: { menuOpen: boolean }) {
+export default function MenuHamburguer({
+  menuOpen,
+  isActivateHeader,
+}: {
+  menuOpen: boolean;
+  isActivateHeader: boolean;
+}) {
+  const headerNoActivate =
+    'pt-[72px] h-full bg-brand-brown flex flex-col items-center font-dm-sans transition-header';
+  const headerActivate =
+    'pt-[72px] h-full bg-brand-light flex flex-col items-center font-dm-sans transition-header';
   if (!menuOpen) return null;
   return (
-    <div className='pt-[72px] h-full bg-brand-brown flex flex-col items-center font-dm-sans'>
+    <div className={isActivateHeader ? headerActivate : headerNoActivate}>
       <ul className='flex flex-col text-[24px] text-center text-primary-white font-bold gap-y-[48px] pt-14'>
         <li>Início</li>
         <li>Missão</li>
