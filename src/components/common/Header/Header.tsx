@@ -45,6 +45,7 @@ export default function Header() {
       </header>
       <MenuHamburguer
         menuOpen={menuIsOpen}
+        setMenuIsOpen={setMenuIsOpen}
         isActivateHeader={isActivateHeader}
       />
     </>
