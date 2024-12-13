@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
-    <div className='pt-[72px] bg-brand-light font-dm-sans text-center'>
+    <div className='pt-[72px] bg-brand-light font-dm-sans text-center overflow-hidden flex flex-col items-center'>
       <h1 className='font-bold pt-10 pb-8 text-brand-brown text-[14px]'>
         BOAS-VINDAS A MISSÃO ITAPICURU
       </h1>
@@ -28,6 +30,13 @@ export default function Home() {
       <button className='rounded-[40px] bg-brand-brown text-white w-[147px] h-[50px] font-bold text-sm mb-24'>
         DOE AGORA
       </button>
+      <Image
+        className='opacity-25 max-w-none max-h-none h-[469px] pb-10'
+        src={'/assets/sertaoHome.png'}
+        width={447}
+        height={469}
+        alt='sertao'
+      />
     </div>
   );
 }
