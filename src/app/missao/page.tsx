@@ -1,3 +1,3 @@
 export default function PageMissao() {
-  return <div>Missão</div>;
+  return <div className='pt-[72px]'>Missão</div>;
 }

@@ -1,3 +1,3 @@
 export default function PageValores() {
-  return <div>Valores</div>;
+  return <div className='pt-[72px]'>Valores</div>;
 }

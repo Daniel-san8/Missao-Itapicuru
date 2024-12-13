@@ -1,3 +1,3 @@
 export default function PageDeclaracaoDeFe() {
-  return <div>Declaração de fé</div>;
+  return <div className='pt-[72px]'>Declaração de fé</div>;
 }
