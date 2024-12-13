@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         poppins: 'var(--poppins)',
         ['dm-sans']: 'var(--dm-sans)',
+        montserrat: 'var(--montserrat)',
       },
     },
   },
