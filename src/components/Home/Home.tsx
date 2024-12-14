@@ -37,6 +37,11 @@ export default function Home() {
         height={469}
         alt='sertao'
       />
+      {/* <div className='bg-criancaHome bg-cover w-[327px] h-[470px] mb-12 font-black font-poppins text-4xl text-white text-start pr-[31px] pl-[20px] pb-[10px] flex rounded-md textShadow absolute'>
+        <span className='self-end'>
+          Mudamos para sempre o jeito de ver o mundo.
+        </span>
+      </div> */}
     </div>
   );
 }

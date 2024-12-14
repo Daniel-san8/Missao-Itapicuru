@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import FacebookIcon from '../../../../public/svg/FacebookIcon';
 import InstagramIcon from '../../../../public/svg/InstagramIcon';
 import YoutubeIcon from '../../../../public/svg/YoutubeIcon';
@@ -14,9 +13,9 @@ export default function MenuHamburguer({
   setMenuIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const headerNoActivate =
-    'pt-[72px] bg-brand-brown flex flex-col items-center font-dm-sans transition-header animateMenu';
+    'pt-[72px] bg-brand-brown flex flex-col items-center font-dm-sans absolute w-full z-[2] transition-header animateMenu';
   const headerActivate =
-    'pt-[72px] bg-brand-light flex flex-col items-center font-dm-sans transition-header animateMenu';
+    'pt-[72px] bg-brand-light flex flex-col items-center font-dm-sans absolute w-full z-[2] transition-header animateMenu';
 
   if (!menuOpen) return null;
   return (
