@@ -19,6 +19,13 @@ export default {
       fontFamily: {
         poppins: 'var(--poppins)',
         ['dm-sans']: 'var(--dm-sans)',
+        montserrat: 'var(--montserrat)',
+      },
+      backgroundImage: {
+        criancaHome: "url('/assets/criancaHome.png')",
+      },
+      textShadow: {
+        custom: '0 4px 4px 4px rgba(0, 0, 0, 0.1)',
       },
     },
   },

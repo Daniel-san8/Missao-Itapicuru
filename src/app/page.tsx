@@ -1,3 +1,9 @@
-export default function Home() {
-  return <div className='pt-[72px]'>Home</div>;
+import Home from '@/components/Home/Home';
+
+export default function PageHome() {
+  return (
+    <main>
+      <Home />
+    </main>
+  );
 }
