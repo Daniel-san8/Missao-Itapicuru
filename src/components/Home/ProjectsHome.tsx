@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ProjectsHome() {
   return (
     <section className='relative'>
@@ -6,6 +8,13 @@ export default function ProjectsHome() {
           Mudamos para sempre o jeito de ver o mundo.
         </span>
       </div>
+      <Image
+        className='pt-[245px] mr-5 justify-self-end'
+        width={88}
+        height={88}
+        src={'/assets/chapeuHome.png'}
+        alt='chapeu de cangaceiro'
+      />
     </section>
   );
 }
