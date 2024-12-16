@@ -19,6 +19,22 @@ export default function ProjectsHome() {
       />
       <TitleProjects />
       <SectionCardProjects />
+      <div className='flex  w-full'>
+        <Image
+          className='ml-5'
+          src='/assets/cactoHome.png'
+          width={84}
+          height={103}
+          alt='cacto'
+        />
+        <Image
+          className='self-center ml-[68px]'
+          src='/assets/setaHome.png'
+          width={30}
+          height={30}
+          alt='seta'
+        />
+      </div>
     </section>
   );
 }
