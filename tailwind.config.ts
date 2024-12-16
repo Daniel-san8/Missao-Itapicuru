@@ -13,6 +13,7 @@ export default {
         foreground: 'var(--foreground)',
         ['brand-brown']: 'var(--brand-brown)',
         ['brand-beige']: 'var(--brand-beige)',
+        ['brand-beige-2']: 'var(--brand-beige-2)',
         ['primary-white']: 'var(--primary-white)',
         ['brand-light']: 'var(--brand-light)',
         ['gray-paragraph']: 'var(--gray-paragraph)',
