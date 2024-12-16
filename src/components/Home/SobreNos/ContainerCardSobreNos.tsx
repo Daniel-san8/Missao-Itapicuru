@@ -3,12 +3,12 @@ import CardSobreNos from './CardSobreNos';
 export default function ContainerCardSobreNos() {
   return (
     <div className='flex flex-col px-[35px] gap-y-11 pb-24 font-poppins font-black text-white'>
-      <CardSobreNos bgImage='cardOneSobreNos'>
+      <CardSobreNos bgImage='/assets/cardOneSobreNos.png'>
         <span className='inline-block text-[40px] leading-[39px] pr-[41px] pl-5 pt-[118px]'>
           MISSÃO, VALOR E VISÃO
         </span>
       </CardSobreNos>
-      <CardSobreNos bgImage='cardTwoSobreNos'>
+      <CardSobreNos bgImage='/assets/cardTwoSobreNos.png'>
         <div className='text-[20px] leading-[19px] pl-[30px] pt-[185px]'>
           <span className='inline-block '>Oque fazemos?</span>
           <p className='text-xs leading-[12px]'>
@@ -19,7 +19,7 @@ export default function ContainerCardSobreNos() {
           </p>
         </div>
       </CardSobreNos>
-      <CardSobreNos bgImage='cardThreeSobreNos'>
+      <CardSobreNos bgImage='/assets/cardThreeSobreNos.png'>
         <div className='pl-3 pt-24'>
           <h1 className='text-4xl'>É a sua vez de contribuir.</h1>
           <p className='text-[10px] leading-[10px] pr-12 pt-4'>
