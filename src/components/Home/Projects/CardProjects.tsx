@@ -1,5 +1,5 @@
+import { ICardProjects } from '@/models/card.interface';
 import CheckedIcon from '../../../../public/svg/CheckedIcon';
-import { ICardProjects } from './SectionCardProjects';
 
 export default function CardProjects({ title, description }: ICardProjects) {
   return (
