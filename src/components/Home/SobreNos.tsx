@@ -1,4 +1,4 @@
-import CardSobreNos from './SobreNos/CardSobreNos';
+import ContainerCardSobreNos from './SobreNos/ContainerCardSobreNos';
 import DescriptionSobreNos from './SobreNos/DescriptionSobreNos';
 
 export default function SobreNos() {
@@ -11,7 +11,7 @@ export default function SobreNos() {
         Entenda quem somos e por que existimos
       </h2>
       <DescriptionSobreNos />
-      <CardSobreNos />
+      <ContainerCardSobreNos />
     </section>
   );
 }
