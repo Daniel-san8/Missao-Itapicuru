@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className='pt-[72px] bg-brand-light font-dm-sans text-center overflow-hidden flex flex-col items-center'>
+    <section className='pt-[72px] bg-brand-light font-dm-sans text-center overflow-hidden flex flex-col items-center'>
       <h1 className='font-bold pt-10 pb-8 text-brand-brown text-[14px]'>
         BOAS-VINDAS A MISSÃO ITAPICURU
       </h1>
@@ -38,6 +38,6 @@ export default function Home() {
         height={469}
         alt='sertao'
       />
-    </div>
+    </section>
   );
 }
