@@ -4,16 +4,15 @@ export default function CardSobreNos({
   bgImage,
   children,
 }: {
-  bgImage: 'cardOneSobreNos' | 'cardTwoSobreNos' | 'cardThreeSobreNos';
+  bgImage: string;
   children: ReactNode;
 }) {
-  const classImageMap = {
-    cardOneSobreNos: 'bg-cardOneSobreNos',
-    cardTwoSobreNos: 'bg-cardTwoSobreNos',
-    cardThreeSobreNos: 'bg-cardThreeSobreNos',
-  };
-
-  const classImage = `w-[309px] h-[304px] rounded-[30px] bg-cover ${classImageMap[bgImage]}`;
-
-  return <div className={classImage}>{children}</div>;
+  return (
+    <div
+      className='w-[309px] h-[304px] rounded-[30px] bg-cover'
+      style={{ backgroundImage: `url('${bgImage}')` }}
+    >
+      {children}
+    </div>
+  );
 }
