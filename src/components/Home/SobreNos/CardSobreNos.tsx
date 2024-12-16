@@ -4,14 +4,14 @@ export default function CardSobreNos({
   bgImage,
   children,
 }: {
-  bgImage: string;
+  bgImage:
+    | 'criancaHome'
+    | 'cardOneSobreNos'
+    | 'cardTwoSobreNos'
+    | 'cardThreeSobreNos';
   children: ReactNode;
 }) {
-  return (
-    <div
-      className={`w-[309px] h-[304px] rounded-[30px] bg-cover bg-${bgImage}`}
-    >
-      {children}
-    </div>
-  );
+  const classImage = `w-[309px] h-[304px] rounded-[30px] bg-cover bg-${bgImage}`;
+
+  return <div className={classImage}>{children}</div>;
 }
