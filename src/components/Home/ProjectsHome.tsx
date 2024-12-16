@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import TitleProjects from './Projects/TitleProjects';
-import CardProjects from './Projects/CardProjects';
+import SectionCardProjects from './Projects/SectionCardProjects';
 
 export default function ProjectsHome() {
   return (
@@ -18,7 +18,7 @@ export default function ProjectsHome() {
         alt='chapeu de cangaceiro'
       />
       <TitleProjects />
-      <CardProjects />
+      <SectionCardProjects />
     </section>
   );
 }

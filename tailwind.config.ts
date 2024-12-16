@@ -15,6 +15,7 @@ export default {
         ['brand-beige']: 'var(--brand-beige)',
         ['primary-white']: 'var(--primary-white)',
         ['brand-light']: 'var(--brand-light)',
+        ['gray-paragraph']: 'var(--gray-paragraph)',
       },
       fontFamily: {
         poppins: 'var(--poppins)',
