@@ -25,6 +25,9 @@ export default {
       },
       backgroundImage: {
         criancaHome: "url('/assets/criancaHome.png')",
+        cardOneSobreNos: "url('/assets/cardOneSobreNos.png')",
+        cardTwoSobreNos: "url('/assets/cardTwoSobreNos.png')",
+        cardThreeSobreNos: "url('/assets/cardThreeSobreNos.png')",
       },
       textShadow: {
         custom: '0 4px 4px 4px rgba(0, 0, 0, 0.1)',

@@ -1,14 +1,10 @@
+import { ICardProjects } from '@/models/card.interface';
 import CardProjects from './CardProjects';
-
-export interface ICardProjects {
-  title: string;
-  description: string;
-}
 
 const cardProjects: ICardProjects[] = [
   {
     title: 'Entendes o que lês?',
-    description: 'alfabetização de jovens e adultos',
+    description: 'Alfabetização de jovens e adultos',
   },
   {
     title: 'Delas é o Reino',
