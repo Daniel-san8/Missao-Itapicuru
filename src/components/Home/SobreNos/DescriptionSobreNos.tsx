@@ -1,6 +1,6 @@
 export default function DescriptionSobreNos() {
   return (
-    <div className='flex flex-col px-6 gap-y-4 text-[11px] font-montserrat font-medium pb-[32px]'>
+    <div className='flex flex-col px-6 gap-y-4 text-[11px] font-montserrat font-medium pb-[32px] text-[#495057]'>
       <p>
         A Missão Casa Farol Sertão Missão Itapicuru é uma organização
         missionária comprometida em levar a boa notícia para os povos não

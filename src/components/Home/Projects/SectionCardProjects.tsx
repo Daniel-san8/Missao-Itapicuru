@@ -19,7 +19,7 @@ const cardProjects: ICardProjects[] = [
     description: 'Padaria comunitária',
   },
   {
-    title: 'Salfons',
+    title: 'Salfona',
     description: 'Escola de música para crianças, jovens e adultos',
   },
 ];
