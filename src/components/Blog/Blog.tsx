@@ -6,9 +6,15 @@ export default async function Blog() {
   );
   const json: IPosts = await reqBlog.json();
   console.log(json);
+
   return (
     <main className='pt-[72px] text-wrap'>
-      {JSON.stringify(json.items[0].url)}
+      {json.items.slice(0, 3).map((post, index) => (
+        <div
+          key={index}
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        ></div>
+      ))}
     </main>
   );
 }
