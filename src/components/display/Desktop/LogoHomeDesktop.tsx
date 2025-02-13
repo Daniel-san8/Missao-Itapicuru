@@ -1,16 +1,7 @@
-"use client"
-
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
-export default function LogoHomeDesktop () {
-    const router = useRouter();
-
-    return <div className="lg:flex lg:bg-brand-brown">
-        <span className="cursor-pointer"
-              onClick={() => router.push('/')}
-        >
-            <Image src={"/assets/logoHomeDesktop.png"} width={147} height={128} alt="logo"/>
-        </span>
-    </div>
+export default function LogoHomeDesktop() {
+    return <span className="cursor-pointer"><Link href={"/"}><Image src={"/assets/logoHomeDesktop.png"} width={147} height={128} alt="logo" /></Link>
+    </span>
 }
