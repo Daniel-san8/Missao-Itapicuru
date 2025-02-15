@@ -1,4 +1,5 @@
 import Image from "next/image"
+import CarrosselProjetosDesktop from "./CarrosselProjetosDesktop"
 
 export default function NossosProjetosDesktop() {
     return <section className="lg:bg-brand-light lg:pt-56">
@@ -13,5 +14,7 @@ export default function NossosProjetosDesktop() {
             </div>
             <Image className="mx-8" src={"/assets/homeDesktop/passaroHomeDesktop.png"} width={140} height={110} alt="pássaro" />
         </div>
+        <CarrosselProjetosDesktop />
+
     </section>
 }
