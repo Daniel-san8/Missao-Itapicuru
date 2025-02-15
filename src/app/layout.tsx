@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/common/Header/Header';
-import HeaderDesktop from '@/components/display/Desktop/HeaderDesktop';
+import HeaderDesktop from '@/components/display/Desktop/Header/HeaderDesktop';
 
 export const metadata: Metadata = {
   title: 'Missão Itapicuru',
