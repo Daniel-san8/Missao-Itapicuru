@@ -3,7 +3,7 @@ import DescriptionSobreNos from './SobreNos/DescriptionSobreNos';
 
 export default function SobreNos() {
   return (
-    <section className='bg-brand-beige'>
+    <section className='bg-brand-beige md:hidden'>
       <h1 className='font-bold font-dm-sans text-[14px] text-brand-brown pt-[100px] pl-6'>
         NOSSA HISTÓRIA
       </h1>
