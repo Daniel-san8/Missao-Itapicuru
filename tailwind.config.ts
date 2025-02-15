@@ -25,7 +25,7 @@ export default {
         montserrat: 'var(--montserrat)',
       },
       backgroundImage: {
-        criancaHome: "url('/assets/criancaHome.png')",
+        criancaHome: "url('http://localhost:3000/assets/criancaHome.png')",
         cardOneSobreNos: "url('/assets/cardOneSobreNos.png')",
         cardTwoSobreNos: "url('/assets/cardTwoSobreNos.png')",
         cardThreeSobreNos: "url('/assets/cardThreeSobreNos.png')",
