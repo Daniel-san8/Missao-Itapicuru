@@ -53,7 +53,7 @@ export default function CarrosselProjetosDesktop() {
     };
 
     return (
-        <Slider {...settings} className="mx-auto max-w-[1024px] pt-32">
+        <Slider {...settings} className="lg:mx-auto lg:max-w-[1024px] lg:pt-32">
             {cardProjects.map(({ title, description }, index) => {
                 return (
                     <div key={index} className="slide-container">
