@@ -1,6 +1,12 @@
-export default function CheckedIcon() {
+interface ICheckedIcon {
+  className?: string;
+}
+
+
+export default function CheckedIcon({ className }: ICheckedIcon) {
   return (
     <svg
+      className={className}
       width='16'
       height='16'
       viewBox='0 0 16 16'

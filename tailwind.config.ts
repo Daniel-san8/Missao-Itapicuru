@@ -17,6 +17,7 @@ export default {
         ['primary-white']: 'var(--primary-white)',
         ['brand-light']: 'var(--brand-light)',
         ['gray-paragraph']: 'var(--gray-paragraph)',
+        ['heat-text-home']: 'var(--heat-text-home)'
       },
       fontFamily: {
         poppins: 'var(--poppins)',
@@ -24,10 +25,11 @@ export default {
         montserrat: 'var(--montserrat)',
       },
       backgroundImage: {
-        criancaHome: "url('/assets/criancaHome.png')",
+        criancaHome: "url('http://localhost:3000/assets/criancaHome.png')",
         cardOneSobreNos: "url('/assets/cardOneSobreNos.png')",
         cardTwoSobreNos: "url('/assets/cardTwoSobreNos.png')",
         cardThreeSobreNos: "url('/assets/cardThreeSobreNos.png')",
+        mainHomeDesktop: "url('/assets/homeDesktop/mainHomeDesktop.png')"
       },
       textShadow: {
         custom: '0 4px 4px 4px rgba(0, 0, 0, 0.1)',

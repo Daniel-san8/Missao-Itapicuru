@@ -15,22 +15,15 @@
   --brand-light: #c75205;
   --primary-white: #fbf5f1;
   --gray-paragraph: #384633;
+  --heat-text-home: #FCC900;
   --poppins: 'Poppins', sans-serif;
   --dm-sans: 'DM Sans', sans-serif;
   --montserrat: 'Montserrat', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
-  height: 1500px;
 }
 
 .transition-header {
@@ -58,4 +51,14 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.slick-center .slide-container {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-container {
+  transition: transform 0.3s ease-in-out;
+  padding: 10px; 
 }
