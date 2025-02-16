@@ -20,7 +20,7 @@ const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="absolute left-[-40px] top-2/3 transform -translate-y-1/2 text-white text-3xl cursor-pointer z-10"
+            className="absolute left-[-40px] top-2/3 transform -translate-y-1/2 text-white text-3xl cursor-pointer"
         >
             ❮
         </button>
@@ -31,7 +31,7 @@ const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="absolute right-[-40px] top-2/3 transform -translate-y-1/2 text-white text-3xl cursor-pointer z-10"
+            className="absolute right-[-40px] top-2/3 transform -translate-y-1/2 text-white text-3xl cursor-pointer"
         >
             ❯
         </button>
