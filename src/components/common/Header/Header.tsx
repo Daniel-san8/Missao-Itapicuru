@@ -33,7 +33,7 @@ export default function Header() {
 
   return (
     <>
-      <header ref={headerRef} className='headerNoActivate'>
+      <header ref={headerRef} className='headerNoActivate md:hidden'>
         <div>
           Missão <span className='font-bold'>Itapicuru</span>
         </div>
