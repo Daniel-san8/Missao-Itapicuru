@@ -8,7 +8,6 @@ export default async function Blog() {
     }
   );
   const json: IPosts = await reqBlog.json();
-  console.log(json);
 
   return (
     <main className='pt-[72px] text-wrap'>

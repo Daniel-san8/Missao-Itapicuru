@@ -62,3 +62,16 @@ body {
   transition: transform 0.3s ease-in-out;
   padding: 10px; 
 }
+
+
+/* loading para rotas */
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: var(--brand-light);
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
