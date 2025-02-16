@@ -47,12 +47,21 @@ export default function CarrosselProjetosDesktop() {
         slidesToScroll: 1,
         arrows: true,
         prevArrow: <CustomPrevArrow />,
-        nextArrow: <CustomNextArrow />
-
+        nextArrow: <CustomNextArrow />,
+        centerMode: true,
+        centerPadding: "0px"
     };
+
     return (
         <Slider {...settings} className="mx-auto max-w-[1024px] pt-32">
-            {cardProjects.map(({ title, description }, index) => <CardCarrosselProjetosDesktop key={index} title={title} description={description} />)}
+            {cardProjects.map(({ title, description }, index) => {
+                return (
+                    <div key={index} className="slide-container">
+                        <CardCarrosselProjetosDesktop title={title} description={description} />
+                    </div>
+                );
+            })}
         </Slider>
     );
 }
+

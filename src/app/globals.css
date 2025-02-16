@@ -52,3 +52,13 @@ body {
     opacity: 1;
   }
 }
+
+.slick-center .slide-container {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-container {
+  transition: transform 0.3s ease-in-out;
+  padding: 10px; 
+}
