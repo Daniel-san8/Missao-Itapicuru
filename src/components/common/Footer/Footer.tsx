@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
   return <footer className='lg:bg-brand-light lg:text-brand-beige lg:flex lg:justify-between lg:px-32 lg:items-center lg:py-20'>
     <div>
-      <Image src={"/assets/logoHomeDesktop.png"} width={183} height={143} alt="logo" draggable={false} />
+      <Image src={"/assets/homeDesktop/logoHomeDesktop.png"} width={183} height={143} alt="logo" draggable={false} />
       <p className="mb-5">©2024 - Missão Itapicuru</p>
       <p>Todos os direitos reservados.</p>
     </div>
