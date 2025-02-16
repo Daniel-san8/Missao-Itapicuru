@@ -5,7 +5,7 @@ import YoutubeIcon from "../../../../public/svg/YoutubeIcon";
 import Link from "next/link";
 
 export default function Footer() {
-  return <footer className='bg-brand-light text-brand-beige lg:flex lg:justify-between lg:px-32 lg:items-center lg:py-20 lg:pt-0 px-6 pt-8'>
+  return <footer className='bg-brand-light text-brand-beige lg:flex lg:justify-between lg:px-32 lg:items-center lg:py-20 lg:pt-20 px-6 pt-8'>
     <div>
       <Image src={"/assets/homeDesktop/logoHomeDesktop.png"} width={183} height={143} alt="logo" draggable={false} />
       <p className="mb-2 lg:mb-5">©2024 - Missão Itapicuru</p>
